@@ -1,0 +1,137 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {	
+	font-size: 30px;
+	color: #0F87FF;
+	background: url("../img/fuego.jpg") no-repeat fixed center center;
+	background-size:100%;
+}
+
+.fixedmenu {
+	background: rgba(0, 0, 0, 0.5);
+	font-family: 'Trade Winds';
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+.fixedmenu ul {
+	float: right;
+}
+.fixedmenu ul li {
+	list-style: none;
+	float: left;
+	padding: 0px 15px;
+}
+.fixedmenu ul li a {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+}
+.fixedmenu ul li a:hover  { 
+	background: rgba(91, 15, 255, 0.5);
+	color: #FFF;
+}
+.fixedmenu ul li a:link  {
+	text-decoration: none;
+
+}
+.fixedmenu ul li a:active {
+	text-decoration: underline; 
+}
+.posts{
+	width: 1250px;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 30px;
+	position: relative;
+	margin: 0px auto;
+}
+.intro {
+	background: none;
+	margin: 25px;
+	padding: 20px 20px;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+	
+}
+.imagen {
+	width: 750px;
+	border: 5px groove #FFF;
+	margin: 0px auto;
+	background: #000;
+	
+}
+.imagen img {
+	width: 100%;
+	vertical-align: top;
+	opacity: 0.8;
+ 
+}
+.imagen img:hover {
+	opacity: 1;
+	transition: background 2s ease-in;
+}
+h2 {
+	font-size: 2em;
+	text-align: center;
+	font-family: 'IM Fell DW Pica SC';
+}
+blockquote {
+	font-size: 1,5em;
+	display: inline-block;
+	text-align: justify;
+	font-family: 'IM Fell DW Pica SC';
+}
+blockquote::first-letter {
+	font-size: 1.5em;
+}
+p::first-letter {
+	font-size: 1.5em;
+}
+p {
+	font-size: 1em;
+	text-align: center; 
+	font-family: 'IM Fell DW Pica SC';
+}
+
+h3 {
+	font-size: 1em;
+	font-family: 'IM Fell DW Pica SC';
+}
+.extra {
+	width: 1250px;
+	position: relative;
+	margin: 10px auto;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 1em;
+	padding: 10px;
+	border: 1px solid #FFF;
+	overflow: hidden; 
+}
+.extra ul li {
+	float: left;
+
+}
+.widget h3 {
+	font-size: 1em;
+	text-align: right; 
+}
+.widget ul li{
+	font-size: 0.75em;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+footer {
+	width: 100%;
+	background: #000;
+	opacity: 0.8;
+	border: 5px solid green;
+}
+.socialmedia {
+	text-align: right; 
+}
+
