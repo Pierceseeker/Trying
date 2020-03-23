@@ -20,8 +20,6 @@ header .fixedmenu {
 .fixedmenu a {
 	list-style: none;
 	padding: 0px 15px;
-}
-.fixedmenu a {
 	text-decoration: none;
 	color: #FFF;
 }
