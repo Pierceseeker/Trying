@@ -1,0 +1,238 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {	
+	width: 100%;
+	font-size: 30px;
+	color: #3cb371;
+	background: url("../img/fondo.jpg") no-repeat center center fixed;
+	background-size:cover;
+}
+header {
+	width: 100%;
+	margin: 0px 0px 20px 0px; 
+	background: rgba(0, 0, 0, 0.8);
+}
+header .fixedmenu {
+	font-family: 'Trade Winds';
+	font-size: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.fixedmenu a {
+	list-style: none;
+	padding: 0px 15px;
+	text-decoration: none;
+	color: #FFF;
+}
+.fixedmenu a:hover  { 
+	background: rgba(91, 15, 255, 0.5);
+	color: #FFF;
+}
+.fixedmenu  a:link  {
+	text-decoration: none;
+}
+.fixedmenu a:active {
+	text-decoration: underline; 
+}
+section {
+	width: 80%;
+	margin: auto;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 30px;
+}
+.intro {
+	background: none;
+	margin: 25px;
+	padding: 20px 20px;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+}
+section .imagen {
+	width: 70%;
+	border: 5px groove #FFF;
+	margin: 0px auto;
+	background: #000;
+}
+.imagen img {
+	width: 100%;
+	vertical-align: top;
+	opacity: 0.5; 
+	transition: all 1s ease;
+}
+.imagen img:hover {
+	opacity: 1;
+}
+h1 {
+	font-size: 2em;
+	text-align: center;
+	font-family: 'IM Fell DW Pica SC';
+}
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'IM Fell DW Pica SC';
+}
+blockquote {
+	font-size: 1,5em;
+	display: inline-block;
+	text-align: justify;
+	font-family: 'IM Fell DW Pica SC';
+}
+blockquote::first-letter {
+	font-size: 1.5em;
+}
+p::first-letter {
+	font-size: 1.5em;
+}
+.main p {
+	font-size: 1em;
+	text-align: center; 
+	font-family: 'IM Fell DW Pica SC';
+}
+.photos {
+	width: 100%;
+	margin: 10px auto;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 1em;
+	padding: 0px;
+	border: 1px solid #FFF;
+  	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: flex-end;
+}
+.kingdoms {
+  width: 30%;
+  list-style: none;
+  margin: 15px;
+  padding: 0px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+}
+.kingdoms img {
+  width: 100%;
+}
+.crop-image {
+  height:300px; 
+  margin: 10px;
+  overflow: hidden;
+  border: solid white;
+  opacity: 0.5;
+  transition: all 1s ease;	
+}
+.crop-image:hover {
+	opacity: 1;
+}
+.kingdoms span {
+  position: absolute;
+  color: white;
+  bottom: 35px;
+  left: 30px;
+  font-size: 0.5em;
+}
+footer {
+	width: 100%;
+	background: #000;
+	opacity: 0.8;
+	border: 3px solid grey;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.autor {
+	width: 70%;
+	margin-top: 70px;
+}
+.autor p {
+	font-size: 0.8em;
+	padding-left: 20px;
+}
+.logo {
+	width: 30%;
+	text-align: right;
+}
+.logo p {
+	font-size: 0.8em;
+	text-align: center;
+}
+.socialmedia {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.socialmedia a {
+	justify-content: space-between;
+	color: #fff;
+	margin: 10px;
+	padding: 15px;
+	border: 1px transparent white;
+	border-radius: 5px;
+}
+.socialmedia .wikipedia {
+	color: #636466;
+}
+.socialmedia .wikipedia:hover {
+	background: #c7c8ca;
+}
+.socialmedia .facebook:hover {
+	background: #3b5998;
+}
+.socialmedia .google {
+	color: #fbbc05;
+}
+.socialmedia .google:hover {
+	background: #ea4335;
+}
+@media screen and (max-width:800px) {
+	body {
+		width: 100%;
+	}
+	header {
+		width: 100%;
+	}
+	header .fixedmenu {
+		width: 100%;
+		padding: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.main {
+		width: 100%;
+	}
+	.photos {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.kingdoms {
+		width: 100%;	
+	}
+	footer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .autor {
+		order: 2;
+	} 
+	footer .logo {
+		order: 1;
+		margin-bottom: 20px;
+	}
+	footer .socialmedia {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}
